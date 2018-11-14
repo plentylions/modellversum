@@ -9,10 +9,32 @@ ul.global-side-menu-list,
 ul.global-side-menu-list ul{
     list-style: none;
 }
+ul.global-side-menu-list > li{
+    background-color: #cdcdcd;
+    padding: 0 12px;
+    margin-bottom: 5px;
+}
+ul.global-side-menu-list > li:hover{
+    background-color: #b50f25;
+}
+ul.global-side-menu-list > li:hover > a,
+ul.global-side-menu-list > li > a:hover{
+    color: #fff !important;
+}
 
-ul.global-side-menu-list li.ddown:after {
+ul.global-side-menu-list li{
+    font-size: 1.1rem;
+    line-height: 40px;
+}
+ul.global-side-menu-list li a{
+    color: #393939;
+}
+ul.global-side-menu-list li a:hover{
+    color: #b50f25;
+}
+ul.global-side-menu-list li.ddown > a:after {
     content: '\f0d7';
-    font-size: inherit;
+    font-size: 1.5rem;
     padding-left: 0.5em;
     border: none;
     float: right;
