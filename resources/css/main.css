@@ -1,3 +1,22 @@
 .global-side-content .static-link-list{
     margin-bottom: 0;
 }
+
+ul.global-side-menu-list{
+    padding: 0;
+}
+ul.global-side-menu-list,
+ul.global-side-menu-list ul{
+    list-style: none;
+}
+
+ul.global-side-menu-list li.ddown:after {
+    content: '\f0d7';
+    font-size: inherit;
+    padding-left: 0.5em;
+    border: none;
+    float: right;
+    font-family: FontAwesome;
+    height: auto;
+    width: auto;
+}
