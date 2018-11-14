@@ -23,7 +23,8 @@ ul.global-side-menu-list > li > a:hover{
 
 ul.global-side-menu-list li{
     font-size: 1.1rem;
-    line-height: 40px;
+    min-height: 40px;
+    align-items: center;
 }
 ul.global-side-menu-list li a{
     display: block;
@@ -32,16 +33,23 @@ ul.global-side-menu-list li a{
 ul.global-side-menu-list li a:hover{
     color: #b50f25;
 }
-ul.global-side-menu-list li.ddown {
+ul.global-side-menu-list li {
     width: 100%;
     cursor: pointer;
     display: flex;
     flex-wrap: wrap;
 }
+ul.global-side-menu-list li:not(.ddown) > a{
+    display: inline-block;
+    padding: 0 12px;
+    flex: 1 0 100%;
+    line-height: 20px;
+}
 ul.global-side-menu-list li.ddown > a {
     display: inline-block;
     padding-left: 12px;
     flex: 1 0 80%;
+    line-height: 20px;
 }
 ul.global-side-menu-list li.ddown > .nav-direction{
     padding-right: 12px;

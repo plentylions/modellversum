@@ -11,7 +11,7 @@ $(function () {
     $('ul.global-side-menu-list').on('click', '.nav-direction', function () {
         let subMenu = $(this).closest('li').find("> ul");
         if (subMenu.length) {
-            collapseBlock.slideToggle("slow");
+            subMenu.slideToggle("slow");
         }
         return false;
     });
