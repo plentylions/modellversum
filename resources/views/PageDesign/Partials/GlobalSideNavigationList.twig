@@ -1,7 +1,10 @@
 {% import "Modellversum::Category.Macros.CategoryTree" as Tree %}
 
+{% set categoryBreadcrumbs = services.category.getHierarchy() %}
+
 <ul class="global-side-menu-list m-t-2">
-    {{ Tree.get_nav_bar(
+    {{ Tree.get_sidemenu(categoryBreadcrumbs, categories, "") }}
+    {# {{ Tree.get_nav_bar(
         categories,
         "",
         4,
@@ -10,5 +13,5 @@
             "2": 50,
             "3": 50
         }
-    ) }}
+    ) }} #}
 </ul>
