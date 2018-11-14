@@ -119,3 +119,12 @@ ul.global-side-menu-list li.ddown > .nav-direction{
         margin-top: 1.5rem !important;
     }
 }
+
+@media (min-width: 992px){
+    .brand-wrapper {
+        position: relative;
+        top: unset;
+        transform: unset;
+        z-index: 10;
+    }
+}
