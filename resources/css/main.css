@@ -13,14 +13,29 @@ ul.global-side-menu-list ul{
 ul.global-side-menu-list ul{
     display: none;
 }
-ul.global-side-menu-list li.active ul{
+ul.global-side-menu-list li.active > ul{
     display: block;
 }
 ul.global-side-menu-list > li > ul{
     padding-left: 0
 }
 ul.global-side-menu-list > li > ul > li > ul{
-    padding-left: 8px
+    padding-left: 15px
+}
+ul.global-side-menu-list > li > ul > li > ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ul.global-side-menu-list > li > ul > li > ul li{
+    min-height: 30px;
+}
+ul.global-side-menu-list > li.ddown > ul > li > ul > li .nav-direction{
+    font-size: 1.8rem;
+    line-height: 30px;
+    text-align: left;
+}
+ul.global-side-menu-list > li > ul > li > ul > li > ul{
+    padding-left: 15px
 }
 
 /* First level */
@@ -56,7 +71,7 @@ ul.global-side-menu-list li{
     display: flex;
     flex-wrap: wrap;
     font-size: 1.1rem;
-    min-height: 40px;
+    min-height: 38px;
     align-items: center;
 }
 ul.global-side-menu-list li a{
@@ -81,8 +96,8 @@ ul.global-side-menu-list li.ddown > a {
 }
 ul.global-side-menu-list li.ddown > .nav-direction{
     padding-right: 12px;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     flex: 1 0 20%;
     text-align: right;
-    line-height: 40px;
+    line-height: 38px;
 }
