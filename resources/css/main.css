@@ -113,10 +113,9 @@ ul.global-side-menu-list li.ddown > .nav-direction{
         padding-right: 0;
         z-index: 1000;
         display: block;
-        width: calc( 100% - 30px );
+        width: 100%;
         max-width: 100%;
         background: #efefef;
-        margin-left: 15px;
         margin-top: 1.5rem !important;
     }
 }
