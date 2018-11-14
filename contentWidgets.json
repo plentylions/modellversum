@@ -23,6 +23,15 @@
                     "tooltip": "Widget.navigationCompanyLogoUrlTooltip",
                     "defaultValue": ""
                 }
+            },
+            "bannerUrl": {
+                "type": "inputFile",
+                "required": false,
+                "label": "Widget.navigationBannerUrlLabel",
+                "options": {
+                    "tooltip": "Widget.navigationBannerUrlTooltip",
+                    "defaultValue": ""
+                }
             }
         }
     }
