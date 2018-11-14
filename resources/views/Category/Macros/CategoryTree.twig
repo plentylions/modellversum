@@ -97,7 +97,9 @@
                     <span class="nav-direction">
                         <i aria-hidden="true" class="fa fa-caret-down"></i>
                     </span>
-                    {{ sidemenu.get_sidemenu(breadcrumbs, category.children, urlNow) }}
+                    <ul>
+                        {{ sidemenu.get_sidemenu(breadcrumbs, category.children, urlNow) }}
+                    </ul>
                 {% endif %}
             </li>
         {% endif %}
