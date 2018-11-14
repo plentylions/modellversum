@@ -7,11 +7,24 @@ ul.global-side-menu-list{
 }
 ul.global-side-menu-list,
 ul.global-side-menu-list ul{
+    width: 100%;
     list-style: none;
+}
+ul.global-side-menu-list ul{
+    display: none;
+}
+ul.global-side-menu-list > li > ul{
+    padding-left: 22px
+}
+ul.global-side-menu-list > li > ul > li > ul{
+    padding-left: 8px
 }
 ul.global-side-menu-list > li{
     background-color: #cdcdcd;
     margin-bottom: 5px;
+}
+ul.global-side-menu-list > li ul{
+    background-color: #fff;
 }
 ul.global-side-menu-list > li:hover{
     background-color: #b50f25;
@@ -22,6 +35,10 @@ ul.global-side-menu-list > li > a:hover{
 }
 
 ul.global-side-menu-list li{
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
     font-size: 1.1rem;
     min-height: 40px;
     align-items: center;
@@ -32,12 +49,6 @@ ul.global-side-menu-list li a{
 }
 ul.global-side-menu-list li a:hover{
     color: #b50f25;
-}
-ul.global-side-menu-list li {
-    width: 100%;
-    cursor: pointer;
-    display: flex;
-    flex-wrap: wrap;
 }
 ul.global-side-menu-list li:not(.ddown) > a{
     display: inline-block;
@@ -56,4 +67,5 @@ ul.global-side-menu-list li.ddown > .nav-direction{
     font-size: 1.5rem;
     flex: 1 0 20%;
     text-align: right;
+    line-height: 40px;
 }
