@@ -106,3 +106,17 @@ ul.global-side-menu-list li.ddown > .nav-direction{
     line-height: 38px;
 }
 /* Side Menu End */
+
+@media (min-width: 768px){
+    .wrapper-main .global-side-content > nav.container-max {
+        padding-left: 0;
+        padding-right: 0;
+        z-index: 1000;
+        display: block;
+        width: calc( 100% - 30px );
+        max-width: 100%;
+        background: #efefef;
+        margin-left: 15px;
+        margin-top: 1.5rem !important;
+    }
+}
