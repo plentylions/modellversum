@@ -57,7 +57,9 @@
 
         <div class="container-max">
             <div class="row">
-                <div class="col-xs-12 col-md-3 global-side-menu">test</div>
+                <div class="col-xs-12 col-md-3 global-side-menu">
+                    {% include "Modellversum::PageDesign.Partials.Header.GlobalSideNavigationList" %}
+                </div>
                 <div class="col-xs-12 col-md-9 global-side-content">
                     <div id="page-body" class="main">
                         {% block PageBody %}
@@ -198,6 +200,8 @@
 {% endfor %}
 
 {{ LayoutContainer.show("Ceres::Script.AfterScriptsLoaded") }}
+
+<script src="{{ plugin_path('Modellversum') }}/js/script.js"></script>
 
 {{ get_filtered_tags() }}
 
