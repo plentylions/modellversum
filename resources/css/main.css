@@ -27,18 +27,12 @@ ul.global-side-menu-list li{
     line-height: 40px;
 }
 ul.global-side-menu-list li a{
+    display: block;
     color: #393939;
 }
 ul.global-side-menu-list li a:hover{
     color: #b50f25;
 }
-ul.global-side-menu-list li.ddown > a:after {
-    content: '\f0d7';
+ul.global-side-menu-list li.ddown > .nav-direction{
     font-size: 1.5rem;
-    padding-left: 0.5em;
-    border: none;
-    float: right;
-    font-family: FontAwesome;
-    height: auto;
-    width: auto;
 }

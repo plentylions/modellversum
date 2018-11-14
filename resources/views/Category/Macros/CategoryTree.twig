@@ -50,6 +50,9 @@
                 <li class="ddown">
                     <a href="{{ currentScopeUrl }}{{ urls.trailingSlashSuffix }}" v-render-category="{ id: {{ category.id }}, type: '{{ category.type }}', scrollToTop: 600 }">{{ category.details[0].name }}</a>
 
+                    <span class="nav-direction">
+                        <i aria-hidden="true" class="fa fa-caret-down"></i>
+                    </span>
                     <ul data-level="1" id="navDropdown{{ counter }}" class="collapse">
                         {% set counter = counter + 1 %}
                         {% if megaMenuLevels == 1 %}
