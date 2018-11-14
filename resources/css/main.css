@@ -1,3 +1,7 @@
+/* Side Menu */
+.global-side-menu-container{
+    margin-top: 45px;
+}
 .global-side-content .static-link-list{
     margin-bottom: 0;
 }
@@ -101,3 +105,4 @@ ul.global-side-menu-list li.ddown > .nav-direction{
     text-align: right;
     line-height: 38px;
 }
+/* Side Menu End */
