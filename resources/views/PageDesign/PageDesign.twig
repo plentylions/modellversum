@@ -57,7 +57,7 @@
 
         <div class="global-side-menu-container container-max">
             <div class="row">
-                {% if services.template.isCheckout() %}
+                {% if not services.template.isCheckout() %}
                     <div class="col-xs-12 col-lg-3 hidden-md-down global-side-menu">
                         {% include "Modellversum::PageDesign.Partials.GlobalSideNavigationList" %}
                     </div>
