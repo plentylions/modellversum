@@ -13,25 +13,41 @@ ul.global-side-menu-list ul{
 ul.global-side-menu-list ul{
     display: none;
 }
+ul.global-side-menu-list li.active ul{
+    display: block;
+}
 ul.global-side-menu-list > li > ul{
-    padding-left: 22px
+    padding-left: 0
 }
 ul.global-side-menu-list > li > ul > li > ul{
     padding-left: 8px
 }
+
+/* First level */
 ul.global-side-menu-list > li{
     background-color: #cdcdcd;
     margin-bottom: 5px;
 }
+ul.global-side-menu-list > li > a{
+    font-weight: 600;
+}
 ul.global-side-menu-list > li ul{
     background-color: #fff;
 }
+ul.global-side-menu-list > li.active,
 ul.global-side-menu-list > li:hover{
     background-color: #b50f25;
 }
+ul.global-side-menu-list > li.active > a,
 ul.global-side-menu-list > li:hover > a,
 ul.global-side-menu-list > li > a:hover{
     color: #fff !important;
+}
+
+/* Second level */
+ul.global-side-menu-list > li > ul > li{
+    background-color: #e5e4e4;
+    margin-top: 5px;
 }
 
 ul.global-side-menu-list li{
@@ -47,6 +63,7 @@ ul.global-side-menu-list li a{
     display: block;
     color: #393939;
 }
+ul.global-side-menu-list li.active > a,
 ul.global-side-menu-list li a:hover{
     color: #b50f25;
 }
