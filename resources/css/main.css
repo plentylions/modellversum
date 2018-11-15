@@ -149,6 +149,9 @@ ul.global-side-menu-list li.ddown > .nav-direction{
         padding-left: 0;
         padding-right: 35px;
     }
+    .global-side-content{
+        padding-right: 0;
+    }
     .top-bar .search-shown .always-visible-search{
         margin-left: 0;
     }
