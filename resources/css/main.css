@@ -123,8 +123,11 @@ ul.global-side-menu-list li.ddown > .nav-direction{
 /* Side Menu End */
 
 @media (min-width: 768px){
+    .top-bar .search-shown .always-visible-search{
+        margin-left: 15px;
+    }
     .wrapper-main .global-side-content > nav.container-max {
-        padding-left: 15px;
+        padding-left: 0;
         padding-right: 0;
         z-index: 1000;
         display: block;
@@ -136,6 +139,11 @@ ul.global-side-menu-list li.ddown > .nav-direction{
 }
 
 @media (min-width: 992px){
+    .wrapper-main .global-side-content > nav.container-max {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: calc( 100% - 30px );
+    }
     .brand-wrapper {
         position: relative;
         top: unset;
@@ -145,6 +153,12 @@ ul.global-side-menu-list li.ddown > .nav-direction{
 }
 
 @media (min-width: 1200px){
+    .wrapper-main .global-side-content > nav.container-max {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        padding-left: 15px;
+    }
     .global-side-menu{
         padding-left: 0;
         padding-right: 35px;

@@ -55,14 +55,16 @@
     <div class="wrapper wrapper-main {% if ceresConfig.header.fixNavBarPos %}isSticky{% endif %}">
         {% include getPartial('header') %}
 
+        {% set showGlobalSideNav = not services.template.isCheckout() and services.template.getCurrentTemplate() != 'tpl.basket' %}
+
         <div class="global-side-menu-container container-max">
             <div class="row">
-                {% if not services.template.isCheckout() %}
+                {% if showGlobalSideNav %}
                     <div class="col-xs-12 col-lg-3 hidden-md-down global-side-menu">
                         {% include "Modellversum::PageDesign.Partials.GlobalSideNavigationList" %}
                     </div>
                 {% endif %}
-                <div class="col-xs-12{% if not services.template.isCheckout() %} col-lg-9{% endif %} global-side-content">
+                <div class="col-xs-12{% if showGlobalSideNav %} col-lg-9{% endif %} global-side-content">
                     <!-- breadcrumb -->
                     {% if not services.template.isHome() and not services.template.isMyAccount() and not services.template.isCheckout() %}
                         {% include "Ceres::PageDesign.Partials.Header.Breadcrumb" %}
