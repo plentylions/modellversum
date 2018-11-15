@@ -55,7 +55,7 @@
     <div class="wrapper wrapper-main {% if ceresConfig.header.fixNavBarPos %}isSticky{% endif %}">
         {% include getPartial('header') %}
 
-        {% set showGlobalSideNav = not services.template.isCheckout() and services.template.getCurrentTemplate() != "tpl.basket" %}
+        {% set showGlobalSideNav = services.template.isHome() or services.template.isItem() or services.template.isSearch() or services.template.isCategory() %}
 
         <div class="global-side-menu-container container-max">
             <div class="row">
