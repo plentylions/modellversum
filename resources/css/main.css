@@ -170,3 +170,16 @@ ul.global-side-menu-list li.ddown > .nav-direction{
         margin-left: 0;
     }
 }
+
+.widget-text .widget-inner{
+    padding:0;
+}
+
+.home .widget.widget-text{
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+}
+
+.wrapper-main .navbar{
+    border-bottom: 0 none;
+}
