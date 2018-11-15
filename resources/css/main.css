@@ -1,7 +1,4 @@
 /* Header */
-.navbar{
-    margin-top: 20px;
-}
 .navbar-brand{
     padding: 0;
 }
@@ -12,6 +9,7 @@
 .navbar-brand img {
     height: 96px;
     max-height: 96px;
+    margin-top: 20px;
 }
 .brand-wrapper .header-banner{
     float: right;
