@@ -15,11 +15,11 @@
         <div class="row">
             <div class="brand-wrapper">
                 <a class="navbar-brand pull-lg-left" href="{{ Twig.print('urls.home') }}">
-                    <img alt="{{ Twig.print('trans("Ceres::Template.headerCompanyName")') }}" src="{{ companyLogoUrl }}" class="img-fluid" crossorigin="anonymous" />
+                    <img alt="{{ Twig.print('trans("Ceres::Template.headerCompanyName")') }}" src="{{ companyLogoUrl }}" class="img-fluid" />
                 </a>
 
                 {% if bannerUrl is not empty %}
-                    <img src="{{ bannerUrl }}" class="header-banner img-fluid hidden-md-down" crossorigin="anonymous" />
+                    <img src="{{ bannerUrl }}" class="header-banner img-fluid hidden-md-down" />
                 {% endif %}
 
                 <button id="btnMainMenuToggler" v-open-mobile-navigation class="navbar-toggler hidden-lg-up" type="button">
