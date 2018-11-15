@@ -1,7 +1,24 @@
-/* Side Menu */
-.global-side-menu-container{
-    margin-top: 45px;
+/* Header */
+.brand-wrapper{
+    margin-top: 20px;
 }
+.navbar-brand{
+    padding: 0;
+}
+.navbar-brand img {
+    width: 96px;
+}
+.brand-wrapper .header-banner,
+.navbar-brand img {
+    height: 96px;
+    max-height: 96px;
+}
+.brand-wrapper .header-banner{
+    float: right;
+    width: calc( 100% - 160px);
+}
+
+/* Side Menu */
 .global-side-content .static-link-list{
     margin-bottom: 0;
 }
