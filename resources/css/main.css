@@ -186,4 +186,10 @@ ul.global-side-menu-list li.ddown > .nav-direction{
 
 #single-carousel .owl-item img {
     height: 100% !important;
+    width:auto;
+    max-width:100%;
+}
+
+#single-carousel .owl-item{
+    text-align:center;
 }
