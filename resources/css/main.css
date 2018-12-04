@@ -84,6 +84,13 @@ ul.global-side-menu-list > li > ul > li{
     margin-top: 5px;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	ul.global-side-menu-list li{
+        -ms-flex-wrap: unset !important;
+        flex-wrap: unset !important;
+    }
+}
+
 ul.global-side-menu-list li{
     width: 100%;
     cursor: pointer;
