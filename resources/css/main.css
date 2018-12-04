@@ -121,6 +121,7 @@ ul.global-side-menu-list li.ddown > a {
         -ms-flex: 1 0 80%;
             flex: 1 0 80%;
     line-height: 20px;
+    max-width: 80%;
 }
 ul.global-side-menu-list li.ddown > .nav-direction{
     padding-right: 12px;
@@ -130,6 +131,7 @@ ul.global-side-menu-list li.ddown > .nav-direction{
             flex: 1 0 20%;
     text-align: right;
     line-height: 38px;
+    max-width: 20%;
 }
 /* Side Menu End */
 
