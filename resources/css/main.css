@@ -87,11 +87,16 @@ ul.global-side-menu-list > li > ul > li{
 ul.global-side-menu-list li{
     width: 100%;
     cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     font-size: 1.1rem;
     min-height: 38px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 ul.global-side-menu-list li a{
     display: block;
@@ -104,19 +109,25 @@ ul.global-side-menu-list li a:hover{
 ul.global-side-menu-list li:not(.ddown) > a{
     display: inline-block;
     padding: 0 12px;
-    flex: 1 0 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
     line-height: 20px;
 }
 ul.global-side-menu-list li.ddown > a {
     display: inline-block;
     padding-left: 12px;
-    flex: 1 0 80%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 80%;
+            flex: 1 0 80%;
     line-height: 20px;
 }
 ul.global-side-menu-list li.ddown > .nav-direction{
     padding-right: 12px;
     font-size: 2.2rem;
-    flex: 1 0 20%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 20%;
+            flex: 1 0 20%;
     text-align: right;
     line-height: 38px;
 }
@@ -147,7 +158,9 @@ ul.global-side-menu-list li.ddown > .nav-direction{
     .brand-wrapper {
         position: relative;
         top: unset;
-        transform: unset;
+        -webkit-transform: unset;
+            -ms-transform: unset;
+                transform: unset;
         z-index: 10;
     }
 }
