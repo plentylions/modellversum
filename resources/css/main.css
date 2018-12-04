@@ -183,7 +183,3 @@ ul.global-side-menu-list li.ddown > .nav-direction{
 .wrapper-main .navbar{
     border-bottom: 0 none;
 }
-
-#single-carousel .owl-item img {
-    height: 100% !important;
-}
