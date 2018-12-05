@@ -85,7 +85,7 @@ ul.global-side-menu-list > li > ul > li{
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    ul.global-side-menu-list li{
+    ul.global-side-menu-list li:not(.ddown){
         height: 38px;
     }
  }
