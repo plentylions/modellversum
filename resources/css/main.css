@@ -84,6 +84,12 @@ ul.global-side-menu-list > li > ul > li{
     margin-top: 5px;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    ul.global-side-menu-list li{
+        height: 38px;
+    }
+ }
+
 ul.global-side-menu-list li{
     width: 100%;
     cursor: pointer;
