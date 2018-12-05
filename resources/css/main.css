@@ -16,6 +16,11 @@
     width: calc( 100% - 160px);
 }
 
+html.ie #single-carousel .owl-item img{
+    width: auto;
+    display: inline-block;
+}
+
 /* Side Menu */
 .global-side-content .static-link-list{
     margin-bottom: 0;
