@@ -9,6 +9,7 @@ use Plenty\Plugin\ServiceProvider;
 use Plenty\Plugin\Events\Dispatcher;
 use Plenty\Plugin\Templates\Twig;
 use IO\Helper\TemplateContainer;
+use IO\Helper\ResourceContainer;
 use IO\Extensions\Functions\Partial;
 use Plenty\Plugin\ConfigRepository;
 
@@ -40,6 +41,16 @@ class ModellversumServiceProvider extends ServiceProvider
 
             $partial->set('page-design', 'Modellversum::PageDesign.PageDesign');
 
+            return false;
+        }, self::PRIORITY);
+
+        $dispatcher->listen('IO.Resources.Import', function (ResourceContainer $container) {
+            $container->addStyleTemplate('Modellversum::Stylesheet');
+        }, self::PRIORITY);
+
+        $dispatcher->listen('IO.tpl.item', function (TemplateContainer $container)
+        {
+            $container->setTemplate('Modellversum::Item.SingleItemWrapper');
             return false;
         }, self::PRIORITY);
     }
