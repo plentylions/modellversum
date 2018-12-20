@@ -16,9 +16,13 @@
     width: calc( 100% - 160px);
 }
 
+/* SingleItem */
 html.ie #single-carousel .owl-item img{
     width: auto;
     display: inline-block;
+}
+#single-carousel .owl-item img{
+    height: auto !important;
 }
 
 /* Side Menu */
